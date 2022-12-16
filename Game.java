@@ -20,7 +20,7 @@ public class Game {
         col = in.nextInt();
         a[row][col] = 5;
     }
-   //        ******MAIN METHOD*******
+
     public static void main(String [] args){
         Scanner in = new Scanner(System.in);
         int row= 9 , col =9;
@@ -68,7 +68,7 @@ public class Game {
             System.out.println();
         }
     }
-    public static void print(int a[][]){
+    public static void print_before_game_ends(int a[][]){
         for(int r[] : a){
             for(int num : r)System.out.print(num+" ");
             System.out.println();
