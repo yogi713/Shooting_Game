@@ -6,7 +6,7 @@ public class Player {
     int chances;
     int row;
     int col;
-  
+    // CONSTRUCTOR
     Player(){
         id = player_id++;
         health = 0;
@@ -108,7 +108,7 @@ public class Player {
     private void search_opponent(int row , int col , int a[][] , Player opponent){
         if(a[row][col] == opponent.id && opponent.health == 0){
             a[row][col] = 0;
-            Game.print(a);
+            Game.print_before_game_ends(a);
             System.out.println("Player"+id+" Wins..!");
             System.exit(0);
         }else if(a[row][col] == opponent.id && opponent.health > 0){
